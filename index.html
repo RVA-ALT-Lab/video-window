@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="EN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		<div id="container">
+			<div class="controls">
+				<button id="full-video">Video</button><button id="full-presentation">Presentation</button><button id="even">Split</button>
+			</div>
+		
+			  <div class="row">
+			    <div class="col-md-5" id="video-frame">
+			      <div class="video-holder">
+			        <video autoplay="true" id="videoElement">
+			        </video>
+			      </div>
+			    </div>
+			    <div class="col-md-7" id="presentation-frame">
+			      <div class="presentation-responsive" id="presentation">
+			        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQlkeQJB1uI3oXcRQ4STcY0rQBAHKEB4popvR86ZIODnQR6u7OlgOdSNDPoAFt6eDOl1CjQNfCKiGOR/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			      </div>
+			    </div>
+			  </div>
+		    <div class="row embed-row d-flex justify-content-center">
+		      <div class="col-md-8" id="paste-area">
+		        <h2>Paste Your Google Slides Embed Code Here</h2>
+		        <input id="new-embed">
+		      </div>
+		    </div>
+		    <button id="hide">Hide/Show</button>
+
+		</div>		
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+
+      
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
